@@ -1,0 +1,8 @@
+# .gitignore
+data/
+checkpoints/
+results/
+venv/
+__pycache__/
+*.pth
+*.pyc
