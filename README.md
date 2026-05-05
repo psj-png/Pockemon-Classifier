@@ -8,7 +8,7 @@ Pokemon image classifier using Transfer Learning with TTA (Test-Time Augmentatio
 
 ## Demo
 
-![demo](results/screenshots/demo_scan.png)
+![demo](screenshots/demo_scan.png)
 
 ---
 
@@ -44,10 +44,10 @@ Pokemon image classifier using Transfer Learning with TTA (Test-Time Augmentatio
 
 ## Learning Curves
 
-![exp1](results/curves/exp1_effnet_b0_baseline.png)
-![exp2](results/curves/exp2_effnet_b0_tta.png)
-![exp3](results/curves/exp3_resnet50_baseline.png)
-![exp4](results/curves/exp4_resnet50_tta.png)
+![exp1](curves/exp1_effnet_b0_baseline.png)
+![exp2](curves/exp2_effnet_b0_tta.png)
+![exp3](curves/exp3_resnet50_baseline.png)
+![exp4](curves/exp4_resnet50_tta.png)
 
 ---
 
@@ -64,11 +64,8 @@ Pocketmon-classifier/
 │   ├── evaluate.py       # Accuracy / Precision / Recall / F1
 │   ├── gradcam.py        # GradCAM heatmap visualization
 │   └── utils.py          # Seed, curve saving, JSON export
-├── checkpoints/          # Trained model weights (.pth)
-├── results/
-│   ├── curves/           # Learning curve PNGs
-│   ├── metrics/          # Per-experiment JSON metrics
-│   └── summary.json      # Overall comparison summary
+├── curves/               # Learning curve PNGs
+├── screenshots/          # Demo screenshots
 ├── run_experiments.py    # Main training script
 ├── app.py                # Streamlit demo GUI
 └── requirements.txt
