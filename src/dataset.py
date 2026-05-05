@@ -93,10 +93,10 @@ def get_tta_transforms() -> list[transforms.Compose]:
             transforms.ColorJitter(brightness=0.2),
             transforms.ToTensor(), transforms.Normalize(_MEAN, _STD),
         ]),
-        # 3: 살짝 어둡게
+        # 3: 살짝 어둡게 (튜플로 범위 지정)
         transforms.Compose([
             transforms.Resize(256), transforms.CenterCrop(IMG_SIZE),
-            transforms.ColorJitter(brightness=-0.2),
+            transforms.ColorJitter(brightness=(0.6, 0.8)),
             transforms.ToTensor(), transforms.Normalize(_MEAN, _STD),
         ]),
         # 4: 상단 편향 crop
